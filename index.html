@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thiệp 20/11</title>
+<style>
+body{
+ margin:0;
+ padding:0;
+ background:url('background.jpg') center/cover no-repeat;
+ height:100vh;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ color:#fff;
+ font-family:'Times New Roman',serif;
+ overflow:hidden;
+}
+.overlay{
+ position:fixed;
+ inset:0;
+ background:rgba(0,0,0,0.35);
+ z-index:1;
+}
+.card{
+ position:relative;
+ z-index:2;
+ background:rgba(0,0,0,0.5);
+ padding:25px 35px;
+ border-radius:16px;
+ max-width:90%;
+ text-align:center;
+}
+.petal{
+ position:fixed;
+ top:-10vh;
+ width:18px;
+ height:18px;
+ border-radius:150% 0 150% 0;
+ background:rgba(255,192,203,0.9);
+ animation:fall 12s linear infinite, sway 4s ease-in-out infinite;
+}
+@keyframes fall{
+ 0%{transform:translateY(-10vh);}
+ 100%{transform:translateY(110vh);}
+}
+@keyframes sway{
+ 0%{margin-left:0;}
+ 50%{margin-left:25px;}
+ 100%{margin-left:-10px;}
+}
+</style>
+</head>
+<body>
+
+<div class="overlay"></div>
+
+<audio id="music" autoplay loop>
+ <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="card">
+<h2>Kính gửi Cô Hiệu Trưởng</h2>
+<p>
+Nhân dịp 20/11, Tập thể lớp 7A chúng em xin gửi đến cô hiệu trưởng những lời chúc ý nghĩa nhất.
+Cô là người lãnh đạo xuất sắc, luôn tạo ra môi trường học tập tích cực cho chúng em.
+Chúng em xin chúc cô sức khỏe dồi dào và thành công ngày càng lớn.
+</p>
+</div>
+
+<div class="petal"></div>
+<div class="petal"></div>
+<div class="petal"></div>
+<div class="petal"></div>
+<div class="petal"></div>
+<div class="petal"></div>
+<div class="petal"></div>
+<div class="petal"></div>
+<div class="petal"></div>
+<div class="petal"></div>
+</body></html>
